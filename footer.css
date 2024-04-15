@@ -1,0 +1,32 @@
+/* Footer */
+footer {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0% 1rem 1rem 1rem;
+}
+
+.links {
+    list-style: none;
+    font-size: 1rem;
+    color: #222;
+    margin-left: 0%;
+    font-weight: lighter;
+}
+
+.content-footer-heading {
+    padding: 2rem;
+    padding-bottom: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #8B4926;
+    font-size: 2rem;
+}
+
+.heading {
+    text-align: left;
+    margin-top: 0.75rem;
+    margin-bottom: 0%;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

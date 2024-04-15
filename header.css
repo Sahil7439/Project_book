@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0%;
+}
+
+/* body {
+    margin-left: 150px;
+    background-color:  #EDE0D4;
+    margin-right: 180px;
+    margin-top: 20px;
+} */
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:  #EDE0D4;
+    position: sticky;
+ }
+
+.nav-logo {
+    background-image: url(./Image/web/new-logo.png);
+    height: 4rem;
+    width: 12rem;
+    background-size: cover;
+}
+
+.nav-books  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    border: none;
+    background-color:  #EDE0D4;
+    display: flex;
+}
+
+.nav-books a {
+    text-decoration: none;
+    color: #8B4926;
+}
+
+.nav-browse:hover {
+    border-radius: 4px;
+    border: 2px solid #8B4926;
+}
+
+.nav-browse-select {
+    border: none;
+    background-color: #EDE0D4;
+    color: #8B4926;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    word-wrap: normal;
+    width: 7rem;
+}
+
+.nav-browse-select-opt {
+    background-color: #fff;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.nav-search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.nav-search-area:hover {
+    border: 2px solid #8B4926;
+    border-radius: 4px;
+}
+
+.nav-search-select {
+    border: none;
+    width: 3rem;
+    height: 2rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #E6CCB2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+option {
+    background-color: #fff;
+}
+
+.nav-search-input {
+    border: none;
+    color: #8B4926;
+    width: 13rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.nav-search-icon {
+    background-color: #8B4926;
+    color: #E6CCB2;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-signin-btn {
+    color: #8B4926;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 10px;
+    font-size: 1.75rem;
+    padding: 0.25rem;
+}
+
+.nav-signin-btn:hover {
+    color: #8B4926;
+    border: 2px solid #8B4926;
+    border-radius: 3px;
+}
+
+.nav-signup-btn {
+    background-color: #0376B8;
+    color: white;
+    font-size: 1.75rem; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 4px;
+    padding: 3px;
+    margin-right: 0%;
+}
+
+.nav-signup-btn:hover {
+    border: 2px solid rgba(3, 118, 184, 0.5);
+    color: aliceblue;
+}
+
+.nav-slide-menu {
+    font-size: rem;
+    color: #8B4926;
+    display: flex;
+    border: none;
+    background-color: #EDE0D4;
+}
+
+.nav-slide-menu:active {
+   background-color: #EDE0D4;
+   color: #222;
+}
+
+#button {
+    text-decoration: none;
+    background-color: #EDE0D4;
+    color: #EDE0D4;
+    border: none;
+    text-decoration-line: none;
+    height: 2rem;
+    border-color: #EDE0D4;
+}
+
+.size-item {
+    font-size: 0.75rem;
+}
+
+.item-heading {
+    font-size: 1rem;
+    border-bottom: 0.01rem solid #100;
+}
+
+#btn-link {
+    padding: 0.5rem;
+}

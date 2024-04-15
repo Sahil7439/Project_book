@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" integrity="sha384-He3RckdFB2wffiHOcESa3sf4Ida+ni/fw9SSzAcfY2EPnU1zkK/sLUzw2C5Tyuhj" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="../../header.css">
+    <link rel="stylesheet" href="../../footer.css"> -->
+    <!-- <link rel="stylesheet" href="../CSS/book.css"> -->
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Project</title>
+
+</head>
+<body>
+    <!--* * * * Header + Navbar * * * *-->
+    <header>
+      <nav  class="navbar">
+        <div class="nav-logo"></div>
+     
+        <div class="nav-books">
+          <a href="./HTML/MyBooks.html"> My Books</a>
+        </div>
+        
+        <div class="nav-browse">
+          
+          <select class="nav-browse-select">
+            <option class="nav-browse-select-opt"> Browse</option>
+            <option class="nav-browse-select-opt">Subjects</option>
+            <option class="nav-browse-select-opt">Trending </option>
+            <option class="nav-browse-select-opt">Library Explorer</option>
+            <option class="nav-browse-select-opt">Lists</option>
+            <option class="nav-browse-select-opt">Collections</option>
+            <option class="nav-browse-select-opt">K-12 Student Library</option>
+            <option class="nav-browse-select-opt">Book Talks</option>
+            <option class="nav-browse-select-opt">Random Book</option>
+            <option class="nav-browse-select-opt">Advanced Search</option>
+          </select>
+        </div>
+
+        <div class="nav-search-area">
+          <select class="nav-search-select" >
+            <option>All</option>
+            <option>Title</option>
+            <option>Author</option>
+            <option>Text</option>
+            <option>Subject</option>
+            <option>Lists</option>
+            <option>Advanced</option>
+          </select>
+          <input type="text" placeholder="Search for 'The Readers'" class="nav-search-input">
+          <div class="nav-search-icon">
+            <i class="fa-solid fa-magnifying-glass "></i>
+          </div>
+        </div>
+          
+        <div>
+          <a  class="nav-signin-btn"  href="./HTML/forms/LogIn.html">Login</a>
+          <a href="./HTML/forms/Signup.html" class="nav-signup-btn" style="text-decoration: none;"> Signup</a>
+        </div>
+ 
+        <!-- <div class="nav-slide-menu">
+          <button class="nav-slide-menu"><i class="fa-solid fa-bars"></i></button>
+        </div> -->
+
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" id="button" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="nav-slide-menu" ><i class="fa-solid fa-bars"></i></button>
+          </a>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item heading item-heading" href="#" style="color: #8B4926;">The Readers</a></li>
+            <li id="btn-link">
+              <a  class="nav-signin-btn"  href="./HTML/forms/member.html" style="font-size: 1rem;">Login</a>
+              <a href="./HTML/forms/Signup.html" class="nav-signup-btn" style="text-decoration: none;font-size: 1rem;margin-top: 0.55rem;"> Signup</a></li>
+            <li>
+              <a class="dropdown-item heading item-heading" href="#">Browse</a>
+              <ul>
+                <li class="size-item"><a>Subject</a></li>
+                <li class="size-item"><a>Trending</a></li>
+                <li class="size-item"><a>Library Explorer</a></li>
+                <li class="size-item"><a>Collection</a></li>
+                <li class="size-item"><a>K-12 Student Library</a></li>
+                <li class="size-item"><a>Book Talks</a></li>
+                <li class="size-item"><a>Random Books</a></li>
+                <li class="size-item"><a>Advanced Search</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item heading item-heading" href="#" >Contribute</a>
+            <ul>
+              <li class="size-item">Add a Book</li>
+              <li class="size-item">Recent Community Edits</li>
+            </ul>
+            </li>
+
+            <li><a class="dropdown-item heading item-heading" href="#" >Resources</a>
+              <ul>
+                <li class="size-item">Help & Support</li>
+                <li class="size-item">Developer Center</li>
+                <li class="size-item">librarians Portal</li>
+              </ul>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- * * * * CONTENT AREA * * * * -->
+        <div class="content-area">
+            <h6 class="content-heading"> Welcome The Readers </h6>
+            <!-- Info Images Content -->
+            <div class="content-info-lib">
+                <div class="content-box">
+                  <div class="content">
+                    <div class="info-img" style="background-image: url('./Image/web/ebook.png');"></div>
+                    <div > 
+                      <h6 class="heading">Read Free Library Books Online</h6>
+                      <p class="text">Millions of books available through Controlled Digital Lending</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-box">
+                  <div class="content">
+                    <div class="info-img" style="background-image: url('./Image/web/goals.png');"></div>
+                    <div > 
+                      <h6 class="heading">Set a Yearly Reading Goal</h6>
+                      <p class="text">Learn how to set a yearly reading goal and track what you read</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-box">
+                  <div class="content">
+                    <div class="info-img" style="background-image: url('./Image/web/track-books.png');"></div>
+                    <div > 
+                      <h6 class="heading">Keep Track of your Favorite Books</h6>
+                      <p class="text">Organize your Books using Lists & the Reading Log</p>
+                    </div>
+                  </div>
+                </div> 
+            </div>
+
+            <!-- Trending Books -->
+            <h6 class="content-heading"> <a href="./HTML/Books/Trending.html">Trending</a> </h6>
+            <div class="content-lib">
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Trendings/Give-&-Take(Adam Grant).png" alt="Give & Take">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Trending/Give and Take_ WHY HELPING OTHERS DRIVES OUR SUCESS.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>    
+              
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Trendings/Military-Diaries.png" alt=" Military-Diaries">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Trending/Mistry.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>    
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Trendings/Speak-to-Win.png" alt="Speak to Win">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Trending/Speak to Win_ How to Present with Power in Any Situation.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>   
+              
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Trendings/summer-autum-book.png" alt="Speak to Win">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Trending/Spring, Summer Seasons.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>   
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Trendings/wired-love.png" alt="Speak to Win">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Trending/Romance.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>   
+            </div>
+
+            <!-- Classic Books -->
+            <h6 class="content-heading"> <a href="./HTML/Books/Classic.html">Classic Books</a>  </h6>
+            <div class="content-lib">
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Classic/Home-love-you.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/classic/Home-you-love.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Classic/Journey-to-heaven.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/classic/Journey-to-Heaven.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Classic/little-girl-winnie.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/classic/Little-Match-Girl.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Classic/lyeaum-chalunge.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/classic/Lyceum-challenge.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Classic/Peace-nad-Love.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/classic/Peace-and-love.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Books We Love -->
+            <h6 class="content-heading"> <a href="./HTML/Books/Books-we-love.html">Books We Love</a>  </h6>
+            <div class="content-lib">
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Not In Library/Not-in-Library-img1.png" alt="Batman & Spider Man Cover">
+                  <button class="btn-not-library"><a  class="book-link" target="_parent">Not In Library</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Books-we-Love/Personality-of-Rabindernath-Tagore.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link" href="./Books_pdf/Books-we-love/personality-of-Rabindernath-Tagore.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Books-we-Love/Leave-of-Grass.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link" href="./Books_pdf/Books-we-love/Leaves-of-Grass.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Books-we-Love/Poetry-of-Africa.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link" href="./Books_pdf/Books-we-love/poetry-for-africa.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Books-we-Love/Pradise-Ragained.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link" href="./Books_pdf/Books-we-love/Pradise-Regained.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Recently Returned Books -->
+            <h6 class="content-heading"> <a href="./HTML/Books/Recentl-Returned.html">Recently Returned</a>  </h6>
+            <div class="content-lib">
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Recently Returned/MoneyArtCover.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Recently Returned/MoneyArt.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Recently Returned/Mens-Hub.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Recently Returned/Mens-Hub.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Recently Returned/Mirror-Madness.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Recently Returned/Mirror-Madness.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Not In Library/Not-in-Library5.png" alt="Batman & Spider Man Cover">
+                  <button class="btn-not-library"><a  class="book-link" target="_parent">Not In Library</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Not In Library/Not-in-Library4.png" alt="Batman & Spider Man Cover">
+                  <button class="btn-not-library"><a  class="book-link" target="_parent">Not In Library</a></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Romance Books -->
+            <h6 class="content-heading"> <a href="./HTML/Books/Romence.html">Romance</a>  </h6>
+            <div class="content-lib">
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Romence/Changed-Man.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link" href="./Books_pdf/Romance/Changed-Man.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Romence/Good-Solider.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link" href="./Books_pdf/Romance/Good-soldiers.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Romence/Parma.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link" href="./Books_pdf/Romance/Charterhouse-of-Parma.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Romence/The-Last-Men.png" alt="The Last Man">
+                  <button class="book-borrow-btn"><a  class="book-link" href="./Books_pdf/Romance/The-Last-Man.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Not In Library/Not-in-Library-img3.png" alt="The Last Man">
+                  <button class="btn-not-library"><a  class="book-link"  target="_parent">Not In Library</a></button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Kids Books -->
+            <h6 class="content-heading"> <a href="./HTML/Books/kid.html">Kids</a>  </h6>
+            <div class="content-lib">
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/kids/Batman-&-Spider-Man.png" alt="Batman & Spider Man Cover">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Kid Book/Batman-Spider-man.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/kids/Disney-Tangled.png" alt="Disney Tangled">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Kid Book/The Art of Tangled kid.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/kids/How-to-Ride-Dragon.png" alt="How to Ride Your Dragon">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Kid Book/How to ride a dragon’s storm kid.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/kids/How-to-train-dragon.png" alt=" How to Train Your dragon">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Kid Book/1-How to train your dragon kid.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/kids/Art-&-Drawing.png" alt="Kids Art">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Kid Book/The -art-kid.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Thrillers Books  -->
+            <h6 class="content-heading"> <a href="./HTML/Books/Thrillers.html">Thrillers</a>  </h6>
+            <div class="content-lib">
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Thrillers/Vamper.png" alt="Kids Art">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Thrillers/The-Vempors.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Thrillers/Wieland-or-the-Transformation.png" alt="Kids Art">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Thrillers/Wieland-Or-Transformation.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Not In Library/Not-in-Library6.png" alt="Batman & Spider Man Cover">
+                  <button class="btn-not-library"><a  class="book-link" target="_parent">Not In Library</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Not In Library/Not-in-Library7.png" alt="Batman & Spider Man Cover">
+                  <button class="btn-not-library"><a  class="book-link" target="_parent">Not In Library</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Not In Library/Not-in-Library-img2.png" alt="Kids Art">
+                  <button class="btn-not-library"><a  class="book-link"  target="_parent">Not In Library</a></button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Textbooks  -->
+            <h6 class="content-heading"> <a href="./HTML/Books/Textbook.html">Textbooks</a>  </h6>
+            <div class="content-lib">
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Textbooks/Broken-Heart.png" alt="Kids Art">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Textbooks/Broken-Heart.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Textbooks/Gaming-Addiction.png" alt="Kids Art">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Textbooks/Dealing-with-Game-Addiction.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Textbooks/No-More-Alcohol.png" alt="Kids Art">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Textbooks/No-More-Alcohal.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Textbooks/Qick-Wellness.png" alt="Kids Art">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Textbooks/Quick-Wellness.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+
+              <div class="book" >
+                <div>
+                  <img class="book-img" src="./Image/Textbooks/Weight-Loss.png" alt="Kids Art">
+                  <button class="book-borrow-btn"><a  class="book-link"  href="./Books_pdf/Textbooks/Carb-Cycling-For-Weight-Loss.pdf" target="_parent">Borrow</a></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Authors Alliance & MIT Press -->
+            <!-- <h6 class="content-heading"> <a href="#">Authors Alliance & MIT Press</a>  </h6>
+            <div class="content-lib">
+                Content is pending
+            </div> -->
+
+            <!-- About the project -->
+            <h2 class="content-footer-heading">About The Project </h2>
+            <div class="content-footer">
+              
+              <div class="content-footer-text" >
+                <h6>
+                  "The Readers" is an open, editable library catalog, building towards a web page for every book ever published.
+                </h6>
+                <p class="text">
+                  Just like Wikipedia, you can contribute new information or corrections to the catalog. You can browse by subjects, authors or lists members have created. If you love books, why not help build a library?
+                </p>
+              </div>
+
+              <div>
+                <img  id="content-footer-logo" src="./Image/web/new-logo.png" alt="logo">
+              </div>
+            </div>
+        </div>
+
+        <footer>
+          <div class="footer-content">
+            <h6 class="heading">The Readers</h6>
+              <a class="links" href="#"> Vision</a><br>
+              <a class="links" href="#"> Volunteer</a><br>
+              <a class="links" href="#"> Volunteer</a><br>
+              <a class="links" href="#"> Partner With Us</a><br>
+              <a class="links" href="#"> Careers</a><br>
+              <a class="links" href="#"> Blog</a><br>
+              <a class="links" href="#"> Terms of Service</a><br>
+              <a class="links" href="#"> Donate</a><br>
+          </div>
+
+          <div class="footer-content">
+            <h6 class="heading">Discover</h6>
+              <a class="links" href="#"> Home</a><br>
+              <a class="links" href="#"> Books</a><br>
+              <a class="links" href="#"> Authors</a><br>
+              <a class="links" href="#"> Subjects</a><br>
+              <a class="links" href="#"> Collections</a><br>
+              <a class="links" href="#"> Advanced Search</a><br>
+              <a class="links" href="#"> Return to Top</a><br>
+          </div>
+
+          <div class="footer-content">
+            <h6 class="heading">Develop</h6>
+              <a class="links" href="#"> Developer Center</a><br>
+              <a class="links" href="#"> API Documention</a><br>
+              <a class="links" href="#"> Bulk Data Dumps</a><br>
+              <a class="links" href="#"> Writing Bots</a><br>
+          </div>
+
+          <div class="footer-content">
+            <h6 class="heading">Help</h6>
+              <a class="links" href="#"> Help Center</a><br>
+              <a class="links" href="#"> Report A Problem</a><br>
+              <a class="links" href="#"> Suggesting Edits </a><br>
+              <a class="links" href="#"> Add a Books</a><br>
+              <a class="links" href="#"> Release Notes</a><br>
+              <i class="fa-brands fa-square-github icon" ></i>
+              <i class="fa-brands fa-square-twitter icon"></i>
+          </div>
+
+          <div class="footer-content">
+            <h6 class="heading">Change Website Language</h6>
+              <a class="links" href="#"> Čeština (cs)</a><br>
+              <a class="links" href="#"> Deutsch (de)</a><br>
+              <a class="links" href="#"> English (en)</a><br>
+              <a class="links" href="#"> Español (es)</a><br>
+              <a class="links" href="#"> Français (fr)</a><br>
+              <a class="links" href="#"> Hrvatski (hr)</a><br>
+              <a class="links" href="#"> Italiano (it)</a><br>
+              <a class="links" href="#"> DPortuguês (pt)</a><br>
+              <a class="links" href="#"> हिंदी (hi)</a><br>
+              <a class="links" href="#"> Sardu (sc)</a><br>
+              <a class="links" href="#"> తెలుగు (te) (pt)</a><br>
+              <a class="links" href="#"> Українська (uk)</a><br>
+              <a class="links" href="#"> 中文 (zh)</a><br>
+          </div>
+
+        </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+</html>

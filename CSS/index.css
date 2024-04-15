@@ -1,0 +1,336 @@
+ * {
+     margin: 0px;
+     padding: 0%;
+ }
+
+ body {
+     margin-left: 150px;
+     background-color:  #EDE0D4;
+     margin-right: 150px;
+     margin-top: 20px;
+ }
+
+ /* Navbar Styling */
+ .navbar {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     background-color:  #EDE0D4;
+     position: sticky;
+  }
+
+ .nav-logo {
+     background-image: url("../Image/web/new-logo.png");
+     height: 3.5rem;
+     width: 10rem;
+     background-size: cover;
+ }
+
+ .nav-books  {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: 200;
+     font-size: 1rem;
+     border: none;
+     background-color:  #EDE0D4;
+     display: flex;
+ }
+
+ .nav-books a {
+     text-decoration: none;
+     color: #8B4926;
+ }
+
+ .nav-browse:hover {
+     border-radius: 4px;
+     border: 2px solid #8B4926;
+ }
+
+ .nav-browse-select {
+     border: none;
+     background-color: #EDE0D4;
+     color: #8B4926;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 1rem;
+     word-wrap: normal;
+     width: 4.75rem;
+ }
+
+ .nav-browse-select-opt {
+     background-color: #fff;
+     color: black;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 1rem;
+     margin-bottom: 2rem;
+ }
+
+ .nav-search-area {
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+ }
+
+ .nav-search-area:hover {
+     border: 2px solid #8B4926;
+     border-radius: 4px;
+ }
+
+ .nav-search-select {
+     border: none;
+     width: 2.75rem;
+     height: 1.5rem;
+     border-top-left-radius: 4px;
+     border-bottom-left-radius: 4px;
+     background-color: #E6CCB2;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ option {
+     background-color: #fff;
+ }
+
+ .nav-search-input {
+     border: none;
+     color: #8B4926;
+     width: 13rem;
+     height: 1.5rem;
+     padding: 0.5rem;
+ }
+
+ .nav-search-icon {
+     background-color: #8B4926;
+     color: #E6CCB2;
+     height: 1.5rem;
+     width: 2rem;
+     font-size: 1rem;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .nav-signin-btn {
+     color: #8B4926;
+     text-decoration: none;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     margin-right: 10px;
+     font-size: 1.25rem;
+     padding: 0.25rem;
+ }
+
+.nav-signin-btn:hover {
+     color: #8B4926;
+     border: 2px solid #8B4926;
+     border-radius: 3px;
+}
+
+ .nav-signup-btn {
+     background-color: #0376B8;
+     color: white;
+     font-size: 1.25rem; 
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     border-radius: 4px;
+     padding: 3px;
+     margin-right: 0%;
+ }
+ 
+ .nav-signup-btn:hover {
+     border: 2px solid rgba(3, 118, 184, 0.5);
+     color: aliceblue;
+ }
+
+ .nav-slide-menu {
+     font-size: 2rem;
+     color: #8B4926;
+     display: flex;
+     border: none;
+     background-color: #EDE0D4;
+ }
+ 
+ .nav-slide-menu:active {
+    background-color: #EDE0D4;
+    color: #222;
+ }
+
+ 
+ /* Content Area */
+ .content-area {
+     background-color: aliceblue;
+     border-radius: 0.5rem;
+     border: 1px solid rgba(0, 0, 0, 0.5);
+     margin-bottom: 1rem;
+ }
+
+ .content-heading {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     margin-top: 1rem;
+     margin-bottom: 0.5rem;
+     margin-left: 0.5rem;   
+ }
+
+ .content-info-lib {
+     background-color: #EDE0D4;
+     height: 9rem;
+     padding: 1rem;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .content-box {
+    height: 7rem;
+    width: 30%;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+ .info-img {
+     height: 6rem;
+     width: 60%;;
+     border-radius: 0.5rem;
+     background-size: contain;
+     background-repeat: no-repeat;  
+ }
+
+ .content-lib {
+     background-color: #EDE0D4;
+     height: 13rem auto;
+     padding: 1rem;
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .heading {
+    text-align: left;
+    margin-top: 0.75rem;
+    margin-bottom: 0%;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text {
+    font-size: 0.65rem;
+    color: rgba(92, 88, 88, 0.943);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ /* Books */
+ .book {
+     background-color: #fff;
+     height: 11rem;
+     width: 8rem;
+     margin: 0rem 1rem 0rem 1rem;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     border-radius: 0.5rem;
+     align-items: center;
+ }
+
+ .book-img {
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 9rem;
+     width: 8rem;
+     border-top-left-radius: 0.5rem;
+     border-top-right-radius: 0.5rem;
+ }
+
+ .book-borrow-btn {
+     width: 8rem;
+     height: 2rem;   
+     background-color: #0376B8;
+     border-bottom-left-radius: 0.5rem;
+     border-bottom-right-radius: 0.5rem;
+     border-color: #0376B8;
+     border-top-color: #fff;
+ }
+
+ .btn-not-library {
+    background-color: #222222d5;
+    width: 100%;
+    height: 2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-color: #fff;
+ }
+
+ .book-link {
+     text-decoration: none;
+     color: whitesmoke;
+ }
+
+ /* Content Footer */
+ .content-footer-heading {
+     padding: 2rem;
+     padding-bottom: 0%;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: #8B4926;
+}
+
+ .content-footer {
+     height: auto;
+     padding: 0.5rem; 
+     margin-left: 1rem;
+     margin-bottom: 1rem;
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .content-footer-text {
+     width: 50%;
+     height: auto;
+ }
+
+#content-footer-logo {
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 6rem;
+     width: auto;
+     margin-left: 5rem;
+}
+ 
+/* Footer */
+footer {
+     display: flex;
+     flex: wrap;
+     justify-content: space-between;
+     width: 100%;
+     padding: 0% 1rem 1rem 1rem;
+
+}
+
+.links {
+     list-style: none;
+     font-size: 0.75rem;
+     color: #222;
+     margin-left: 0%;
+}
+
+#button {
+    text-decoration: none;
+    background-color: #EDE0D4;
+    color: #EDE0D4;
+    border: none;
+    text-decoration-line: none;
+    height: 2rem;
+    border-color: #EDE0D4;
+}
+
+.size-item {
+    font-size: 0.75rem;
+}
+
+.item-heading {
+    font-size: 1rem;
+    border-bottom: 0.01rem solid #100;
+}
+
+#btn-link {
+    padding: 0.5rem;
+}

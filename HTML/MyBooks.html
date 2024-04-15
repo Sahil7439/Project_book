@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" integrity="sha384-He3RckdFB2wffiHOcESa3sf4Ida+ni/fw9SSzAcfY2EPnU1zkK/sLUzw2C5Tyuhj" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../CSS/book.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>My Books</title>
+</head>
+<body>
+    <!--* * * * Header + Navbar * * * *-->
+    <header>
+        <nav  class="navbar">
+          <div class="nav-logo"></div>
+       
+          <div class="nav-books">
+            <a href="../HTML/MyBooks.html"> My Books</a>
+          </div>
+          
+          <div class="nav-browse">
+            
+            <select class="nav-browse-select">
+              <option class="nav-browse-select-opt"> Browse</option>
+              <option class="nav-browse-select-opt">Subjects</option>
+              <option class="nav-browse-select-opt">Trending </option>
+              <option class="nav-browse-select-opt">Library Explorer</option>
+              <option class="nav-browse-select-opt">Lists</option>
+              <option class="nav-browse-select-opt">Collections</option>
+              <option class="nav-browse-select-opt">K-12 Student Library</option>
+              <option class="nav-browse-select-opt">Book Talks</option>
+              <option class="nav-browse-select-opt">Random Book</option>
+              <option class="nav-browse-select-opt">Advanced Search</option>
+            </select>
+          </div>
+  
+          <div class="nav-search-area">
+            <select class="nav-search-select" >
+              <option>All</option>
+              <option>Title</option>
+              <option>Author</option>
+              <option>Text</option>
+              <option>Subject</option>
+              <option>Lists</option>
+              <option>Advanced</option>
+            </select>
+            <input type="text" placeholder="Search for 'The Readers'" class="nav-search-input">
+            <div class="nav-search-icon">
+              <i class="fa-solid fa-magnifying-glass "></i>
+            </div>
+          </div>
+            
+          <div>
+            <a  class="nav-signin-btn"  href="../HTML/forms/LogIn.html">Login</a>
+            <a href="../HTML/forms/Signup.html" class="nav-signup-btn" style="text-decoration: none;"> Signup</a>
+          </div>
+   
+          <!-- <div class="nav-slide-menu">
+            <button class="nav-slide-menu"><i class="fa-solid fa-bars"></i></button>
+          </div> -->
+  
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" id="button" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="nav-slide-menu" ><i class="fa-solid fa-bars"></i></button>
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item heading item-heading" href="#" style="color: #8B4926;">The Readers</a></li>
+              <li id="btn-link">
+                <a  class="nav-signin-btn"  href="../HTML/forms/LogIn.html" style="font-size: 1rem;">Login</a>
+                <a href="../HTML/forms/Signup.html" class="nav-signup-btn" style="text-decoration: none;font-size: 1rem;margin-top: 0.55rem;"> Signup</a></li>
+              <li>
+                <a class="dropdown-item heading item-heading" href="#">Browse</a>
+                <ul>
+                  <li class="size-item"><a>Subject</a></li>
+                  <li class="size-item"><a>Trending</a></li>
+                  <li class="size-item"><a>Library Explorer</a></li>
+                  <li class="size-item"><a>Collection</a></li>
+                  <li class="size-item"><a>K-12 Student Library</a></li>
+                  <li class="size-item"><a>Book Talks</a></li>
+                  <li class="size-item"><a>Random Books</a></li>
+                  <li class="size-item"><a>Advanced Search</a></li>
+                </ul>
+              </li>
+  
+              <li><a class="dropdown-item heading item-heading" href="#" >Contribute</a>
+              <ul>
+                <li class="size-item">Add a Book</li>
+                <li class="size-item">Recent Community Edits</li>
+              </ul>
+              </li>
+  
+              <li><a class="dropdown-item heading item-heading" href="#" >Resources</a>
+                <ul>
+                  <li class="size-item">Help & Support</li>
+                  <li class="size-item">Developer Center</li>
+                  <li class="size-item">librarians Portal</li>
+                </ul>
+                </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    
+        <h1 class="book-heading" > <i class="fa-solid fa-book-open-reader book-icon"></i> &nbsp; My Books &nbsp; <i class="fa-solid fa-book-open-reader book-icon"></i> </h1>  
+
+        <p style="color: #000;font-size: 1rem;text-align: left;">* All your 'Favorite and Borrow books' are show here *</p>
+   
+        <div class="book-content-area" style="height: 100%;"> 
+            
+            <div class="book-content">
+                <div>
+                    <img class="book-img" src="../Image/Romence/Changed-Man.png" alt="Art & Drawing">
+                </div>
+                <div  class="book-info">
+                    <h3 class="book-info-heading"> <b>A Changed Man And Other Tales</b></h3>
+                    <h6><b>Author:</b> <i>Thomas Hardy</i></h6>
+                    <h6><b>Publisher: </b><i>Createspace Independent Pub</i></h6>
+                    <h6><b>Summary:</b></h6>
+                    <p class="summary" >
+                        A Changed Man and Other Tales is a collection of twelve tales written by Thomas Hardy. The collection was originally published in book form in 1913, although all of the tales had been previously published in newspapers or magazines from 1881 to 1900. There are eleven short stories and a novella The Romantic Adventures of a Milkmaid. At the end of the book there is a map of the imaginary Wessex of Hardy's novels and poems.
+                    </p>
+                    <a href="../../Books_pdf/Romance/Changed-Man.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                        <!-- Button 2 (Favourite) -->
+                    <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+                </div>  
+            </div>
+        </div>
+    <footer>
+        <div class="footer-content">
+          <h6 class="heading">The Readers</h6>
+            <a class="links" href="#"> Vision</a><br>
+            <a class="links" href="#"> Volunteer</a><br>
+            <a class="links" href="#"> Volunteer</a><br>
+            <a class="links" href="#"> Partner With Us</a><br>
+            <a class="links" href="#"> Careers</a><br>
+            <a class="links" href="#"> Blog</a><br>
+            <a class="links" href="#"> Terms of Service</a><br>
+            <a class="links" href="#"> Donate</a><br>
+        </div>
+
+        <div class="footer-content">
+          <h6 class="heading">Discover</h6>
+            <a class="links" href="#"> Home</a><br>
+            <a class="links" href="#"> Books</a><br>
+            <a class="links" href="#"> Authors</a><br>
+            <a class="links" href="#"> Subjects</a><br>
+            <a class="links" href="#"> Collections</a><br>
+            <a class="links" href="#"> Advanced Search</a><br>
+            <a class="links" href="#"> Return to Top</a><br>
+        </div>
+
+        <div class="footer-content">
+          <h6 class="heading">Develop</h6>
+            <a class="links" href="#"> Developer Center</a><br>
+            <a class="links" href="#"> API Documention</a><br>
+            <a class="links" href="#"> Bulk Data Dumps</a><br>
+            <a class="links" href="#"> Writing Bots</a><br>
+        </div>
+
+        <div class="footer-content">
+          <h6 class="heading">Help</h6>
+            <a class="links" href="#"> Help Center</a><br>
+            <a class="links" href="#"> Report A Problem</a><br>
+            <a class="links" href="#"> Suggesting Edits </a><br>
+            <a class="links" href="#"> Add a Books</a><br>
+            <a class="links" href="#"> Release Notes</a><br>
+            <i class="fa-brands fa-square-github icon" ></i>
+            <i class="fa-brands fa-square-twitter icon"></i>
+        </div>
+
+        <div class="footer-content">
+          <h6 class="heading">Change Website Language</h6>
+            <a class="links" href="#"> Čeština (cs)</a><br>
+            <a class="links" href="#"> Deutsch (de)</a><br>
+            <a class="links" href="#"> English (en)</a><br>
+            <a class="links" href="#"> Español (es)</a><br>
+            <a class="links" href="#"> Français (fr)</a><br>
+            <a class="links" href="#"> Hrvatski (hr)</a><br>
+            <a class="links" href="#"> Italiano (it)</a><br>
+            <a class="links" href="#"> DPortuguês (pt)</a><br>
+            <a class="links" href="#"> हिंदी (hi)</a><br>
+            <a class="links" href="#"> Sardu (sc)</a><br>
+            <a class="links" href="#"> తెలుగు (te) (pt)</a><br>
+            <a class="links" href="#"> Українська (uk)</a><br>
+            <a class="links" href="#"> 中文 (zh)</a><br>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

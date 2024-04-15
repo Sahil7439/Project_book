@@ -1,0 +1,14 @@
+body{
+    background-color: beige;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+    .sidebar{
+        background-color: rgb(225, 212, 188);
+        backdrop-filter: blur(10px);
+    
+    }
+}
+    

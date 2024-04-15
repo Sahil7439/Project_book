@@ -1,0 +1,23 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    margin-left: 180px;
+    background-color:  #EDE0D4;
+    margin-right: 180px;
+    margin-top: 20px;
+}
+
+.browse-heading {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0;
+}
+

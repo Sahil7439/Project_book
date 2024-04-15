@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" integrity="sha384-He3RckdFB2wffiHOcESa3sf4Ida+ni/fw9SSzAcfY2EPnU1zkK/sLUzw2C5Tyuhj" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"  href="../../CSS/book.css">
+    <link rel="stylesheet" href="../../header.css">
+    <link rel="stylesheet" href="../../footer.css">
+    <title>  Romence </title>
+</head>
+<body>
+    <!--* * * * Header + Navbar * * * *-->
+    <header>
+        <nav  class="navbar">
+          <div class="nav-logo"></div>
+       
+          <div class="nav-books">
+            <a href="#"> My Books</a>
+          </div>
+          
+          <div class="nav-browse">
+            
+            <select class="nav-browse-select">
+              <option class="nav-browse-select-opt"> Browse</option>
+              <option class="nav-browse-select-opt">Subjects</option>
+              <option class="nav-browse-select-opt">Trending </option>
+              <option class="nav-browse-select-opt">Library Explorer</option>
+              <option class="nav-browse-select-opt">Lists</option>
+              <option class="nav-browse-select-opt">Collections</option>
+              <option class="nav-browse-select-opt">K-12 Student Library</option>
+              <option class="nav-browse-select-opt">Book Talks</option>
+              <option class="nav-browse-select-opt">Random Book</option>
+              <option class="nav-browse-select-opt">Advanced Search</option>
+            </select>
+          </div>
+  
+          <div class="nav-search-area">
+            <select class="nav-search-select" >
+              <option>All</option>
+              <option>Title</option>
+              <option>Author</option>
+              <option>Text</option>
+              <option>Subject</option>
+              <option>Lists</option>
+              <option>Advanced</option>
+            </select>
+            <input type="text" placeholder="Search for 'The Readers'" class="nav-search-input">
+            <div class="nav-search-icon">
+              <i class="fa-solid fa-magnifying-glass "></i>
+            </div>
+          </div>
+            
+          <div>
+            <a  class="nav-signin-btn"  href="./HTML/forms/LogIn.html">Login</a>
+            <a href="./HTML/forms/Signup.html" class="nav-signup-btn" style="text-decoration: none;"> Signup</a>
+          </div>
+   
+          <!-- <div class="nav-slide-menu">
+            <button class="nav-slide-menu"><i class="fa-solid fa-bars"></i></button>
+          </div> -->
+  
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" id="button" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="nav-slide-menu" ><i class="fa-solid fa-bars"></i></button>
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item heading item-heading" href="#" style="color: #8B4926;">The Readers</a></li>
+              <li id="btn-link">
+                <a  class="nav-signin-btn"  href="./HTML/forms/member.html" style="font-size: 1rem;">Login</a>
+                <a href="./HTML/forms/Signup.html" class="nav-signup-btn" style="text-decoration: none;font-size: 1rem;margin-top: 0.55rem;"> Signup</a></li>
+              <li>
+                <a class="dropdown-item heading item-heading" href="#">Browse</a>
+                <ul>
+                  <li class="size-item"><a>Subject</a></li>
+                  <li class="size-item"><a>Trending</a></li>
+                  <li class="size-item"><a>Library Explorer</a></li>
+                  <li class="size-item"><a>Collection</a></li>
+                  <li class="size-item"><a>K-12 Student Library</a></li>
+                  <li class="size-item"><a>Book Talks</a></li>
+                  <li class="size-item"><a>Random Books</a></li>
+                  <li class="size-item"><a>Advanced Search</a></li>
+                </ul>
+              </li>
+  
+              <li><a class="dropdown-item heading item-heading" href="#" >Contribute</a>
+              <ul>
+                <li class="size-item">Add a Book</li>
+                <li class="size-item">Recent Community Edits</li>
+              </ul>
+              </li>
+  
+              <li><a class="dropdown-item heading item-heading" href="#" >Resources</a>
+                <ul>
+                  <li class="size-item">Help & Support</li>
+                  <li class="size-item">Developer Center</li>
+                  <li class="size-item">librarians Portal</li>
+                </ul>
+                </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+  
+
+    <h1 class="book-heading"> <i class="fa-solid fa-book-open-reader book-icon"></i> &nbsp; Romence Books &nbsp; <i class="fa-solid fa-book-open-reader book-icon"></i> </h1>   
+    <div class="book-content-area">
+
+        <!-- Romence -->
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Romence/Changed-Man.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>A Changed Man And Other Tales</b></h3>
+                <h6><b>Author:</b> <i>Thomas Hardy</i></h6>
+                <h6><b>Publisher: </b><i>Createspace Independent Pub</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    A Changed Man and Other Tales is a collection of twelve tales written by Thomas Hardy. The collection was originally published in book form in 1913, although all of the tales had been previously published in newspapers or magazines from 1881 to 1900. There are eleven short stories and a novella The Romantic Adventures of a Milkmaid. At the end of the book there is a map of the imaginary Wessex of Hardy's novels and poems.
+                </p>
+                <a href="../../Books_pdf/Romance/Changed-Man.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Romence/Good-Solider.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>THE GOOD SOLDIER</b></h3>
+                <h6><b>Author:</b> <i>Thomas Hardy</i></h6>
+                <h6><b>Publisher: </b><i>Ford Madox Ford</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    THIS is the saddest story I have ever heard. We had known the Ashburnhams for nine
+                    seasons of the town of Nauheim with an extreme intimacy—or, rather with an
+                    acquaintanceship as loose and easy and yet as close as a good glove's with your hand. 
+                </p>
+                <a href="../../Books_pdf/Romance/Good-soldiers.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Romence/Parma.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>The Charterhouse of Parma</b></h3>
+                <h6><b>Author:</b> <i>Stendhal</i></h6>
+                <h6><b>Publisher: </b><i>Createspace Independent Pub</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    A Changed Man and Other Tales is a collection of twelve tales written by Thomas Hardy. The collection was originally published in book form in 1913, although all of the tales had been previously published in newspapers or magazines from 1881 to 1900. There are eleven short stories and a novella The Romantic Adventures of a Milkmaid. At the end of the book there is a map of the imaginary Wessex of Hardy's novels and poems.
+                </p>
+                <a href="../../Books_pdf/Romance/Charterhouse-of-Parma.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Romence/The-Last-Men.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>The Last Men</b></h3>
+                <h6><b>Author:</b> <i>Mary Shelley</i></h6>
+                <h6><b>Publisher: </b><i>Createspace Independent Pub</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    I visited Naples in the year 1818. On the 8th of December of that year,
+                    my companion and I crossed the Bay, to visit the antiquities which are
+                    scattered on the shores of Bai¾. The translucent and shining waters of
+                    the calm sea covered fragments of old Roman villas
+                </p>
+                <a href="../../Books_pdf/Romance/The-Last-Man.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Not In Library/Not-in-Library-img3.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>The Wonder-Ful Wizard Of OZ</b></h3>
+                <h6><b>Author:</b> <i>L. Frank Baum</i></h6>
+                <h6><b>Publisher: </b><i> Denslow Publications</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Young Kansas farm girl Dorothy Gale is taken by a tornado to the marvelous Land of Oz. Together with her strange new friends, she will free the people of Oz from the rule of wicked witches and false wizards in her search for a way home.
+                </p>
+                <a><button class="btn-not-library">Not In Library</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <!-- Recently Returned -->
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Recently Returned/MoneyArtCover.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>The Art Of Money Getting</b></h3>
+                <h6><b>Author:</b> <i>P.T. Barnum</i></h6>
+                <h6><b>Publisher: </b><i>Obooko Publishing</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    When in good health making money is not difficult, what is difficult is to keep it. That is why Dr. Franklin said that the road to wealth is, “as plain as the road to the mill.” It consists simply in expending less than we earn, this is the true substratum of art of money getting.
+                </p>
+                <a href="../../Books_pdf/Recently Returned/MoneyArt.pdf.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Recently Returned/Mens-Hub.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Gender Justices</b></h3>
+                <h6><b>Author:</b> <i>P.T. Barnum</i></h6>
+                <h6><b>Publisher: </b><i>Men's Hub</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Social, political and economic equality for women is integral to the achievement of all Millennium Development Goals. Hence, gender justice entails ending the inequalities between women and men that are produced and reproduced in the family, the community, the market and the state.
+                </p>
+                <a href="../../Books_pdf/Recently Returned/Mens-Hub.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Recently Returned/Mirror-Madness.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Mirror Madness</b></h3>
+                <h6><b>Author:</b> <i>Adesola OBA </i></h6>
+                <h6><b>Publisher: </b><i>Kindle Edition</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Guide to Improving Body Image. In this e-book you will find topics on body image basics, how to love yourself, how to participate in your favorite sport, how not to compare yourself to others, how to wear the right clothes and the dangers of a bad body image . .
+                </p>
+                <a href="../../Books_pdf/Recently Returned/Mirror-Madness.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Not In Library/Not-in-Library4.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>The Girl Form Playa Blanca</b></h3>
+                <h6><b>Author:</b> <i>Ofelia Dumas Lachtman</i></h6>
+                <h6><b>Publisher: </b><i>Arte Publico Press</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    The Girl form playa Blanca is about Elena and her brother Carlos coming up from their Mexican town Playa Blanca to find their, who lives in L.A. When they get their find out that he has moved and no neighbors know where he is. Elena finds work and a place to stay while she is looking for her farther.
+                </p>
+                <a><button class="btn-not-library">Not In Library</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Not In Library/Not-in-Library5.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Pirate Puzzle</b></h3>
+                <h6><b>Author:</b> <i> Leigh, Susannah.</i></h6>
+                <h6><b>Publisher: </b><i>London </i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Abstract: Pirate schoolboy Joe is invited to join his Uncle Bill in a hunt for treasure on Deadly Isle. But crafty Captain Cutthroat is also on the trail and it looks like he may get there first. This tale is linked with picture puzzles and packed with things to spot.
+                </p>
+                <a><button class="btn-not-library">Not In Library</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <!-- Books We love -->
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Not In Library/Not-in-Library-img1.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Read People Like a Book</b></h3>
+                <h6><b>Author:</b> <i> Patrick King</i></h6>
+                <h6><b>Publisher: </b><i> Big Mind LLC</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Read People like a Book" by Patrick King is a comprehensive guide to understanding human behavior and mastering the art of social interactions. Through this book, King provides practical techniques and psychological insights to help readers develop their empathy, observation, and communication skills.
+                </p>
+                <a><button class="btn-not-library">Not In Library</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Books-we-Love/Leave-of-Grass.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Leaves of Grass </b></h3>
+                <h6><b>Author:</b> <i>Walt Whitman</i></h6>
+                <h6><b>Publisher: </b><i>Web Book Publications</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    The main ideas in Leaves of Grass are a celebration of individuality in relation to society and nature as well as a celebration of America. In addition to these, other ideas such as love, spirituality, and death are also dealt with in the book.
+                </p>
+                <a href="../../Books_pdf/Books-we-love/Leaves-of-Grass.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Books-we-Love/Personality-of-Rabindernath-Tagore.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>PERSONALITY</b></h3>
+                <h6><b>Author:</b> <i>SIR RABINDRANATH TAGORE</i></h6>
+                <h6><b>Publisher: </b><i>THE MACMILLAN COMPANY</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Personality by Rabindranath Tagore is an insightful book that explores the complexities of human nature and how our character is shaped. Tagore, a renowned poet and philosopher, invites readers to dive into the various aspects of personality, shedding light on the multifaceted nature of individuals.
+                </p>
+                <a href="../../Books_pdf/Books-we-love/personality-of-Rabindernath-Tagore.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Books-we-Love/Poetry-of-Africa.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Poetry Of Africa</b></h3>
+                <h6><b>Author:</b> <i>African Poet</i></h6>
+                <h6><b>Publisher: </b><i>Penguin Group (USA)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Before you glance through table of content, let me quickly give you a tip on what poet or poems are.
+                    POETRY is a vital language that draws senses, connecting with your feelings and memories. Poetry is a
+                    language that speaks more in few words than ordinary language. 
+                </p>
+                <a href="../../Books_pdf/Books-we-love/poetry-for-africa.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Books-we-Love/Pradise-Ragained.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Paradise Regained</b></h3>
+                <h6><b>Author:</b> <i>John Milton </i></h6>
+                <h6><b>Publisher: </b><i>Web Book Publications</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Paradise Regained by John Milton is an epic narrative poem that was initially published in 1671. A widely-revered essayist, dramatist, and lyric poet, Milton is perhaps best known for Paradise Lost, an epic poem he wrote in 1667. Whereas Paradise Lost depicts Lucifer’s fall from Heaven and Adam and Eve’s expulsion from the Garden of Eden, Paradise Regained centers on the temptation of Christ, drawing on the Gospel of Luke for its inspiration.
+                </p>
+                <a href="../../Books_pdf/Books-we-love/Pradise-Regained.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+        
+        <!-- Classic Books -->
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Classic/Home-love-you.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Apartment Living</b></h3>
+                <h6><b>Author:</b> <i>Nicole Benson</i></h6>
+                <h6><b>Publisher: </b><i>Penguin Group (USA)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    This book is your guide to transforming your apartment into a
+                    space that not only meets your needs but also reflects your
+                    unique personality and style. Whether you're a first-time renter
+                    or a seasoned apartment dweller, this book is packed with
+                    practical tips, creative ideas, and inspiration to help you make
+                    the most of your living space.
+                </p>
+                <a href="../../Books_pdf/classic/Home-you-love.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Classic/Journey-to-heaven.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>A Sinner’s Journey To Heaven </b></h3>
+                <h6><b>Author:</b> <i>BOYGENE BORICE</i></h6>
+                <h6><b>Publisher: </b><i>Forgotten Books</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    This is not a book of morals but of a heart that is tired of a judgmental society. A heart that is drained and broken. A heart that sought heaven but only found hell. If you are in pain or broken, I don't know what to tell you, but, maybe, it shall be well.
+                </p>
+                <a href="../../Books_pdf/classic/Journey-to-Heaven.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Classic/little-girl-winnie.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Our Winnie and The Little Match-Girl</b></h3>
+                <h6><b>Author:</b> <i>EVELYN EVERETT-GREEN</i></h6>
+                <h6><b>Publisher: </b><i>Forgotten Books </i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    The swallows were enjoying the beauty of the evening as much as living things could do. They were darting this way and that in the bright, soft sunshine; now ﬂying high, now low, and ever seeming drawn by irresistible attraction towards the shining surface of the water, which lay smiling and placid, without even a ripple to break its glassy smoothness.
+                </p>
+                <a href="../../Books_pdf/classic/Little-Match-Girl.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Classic/lyeaum-chalunge.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b> Lyceum Challenge</b></h3>
+                <h6><b>Author:</b> <i>J. Z. Colby </i></h6>
+                <h6><b>Publisher: </b><i>Lyceum Publications</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    The original Lyceum story that was the basis for NEBADOR Book Seven: The Local Universe, Part 2 ... Joining an international service organization that advises world leaders may not be as easy as it sounds.
+                </p>
+                <a href="../../Books_pdf/classic/Lyceum-challenge.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Classic/Peace-nad-Love.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Peace And Love Doesn't Last Long</b></h3>
+                <h6><b>Author:</b> <i> Ezekiel Millinga</i></h6>
+                <h6><b>Publisher: </b><i>Olla Innovative Corporation </i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    After overthrowing Christos from power, the long dormant enemy is awoken. Christos was just a tree and under him there were strong, vicious, and deep roots. The enemy wants its power back and everyone responsible dead.
+                </p>
+                <a href="../../Books_pdf/classic/Peace-and-love.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+         <!-- Trendings -->
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Trendings/Give-&-Take(Adam Grant).png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>GIVE & TAKE: A Revolutionary Approach to Success</b></h3>
+                <h6><b>Author:</b> <i>Adam Grant</i></h6>
+                <h6><b>Publisher: </b><i>Penguin Group (USA)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Give and Take just might be the most important book of this young century. As insightful and
+                    entertaining as Malcolm Gladwell at his best, this book has profound implications for how we
+                    manage our careers, deal with our friends and relatives, raise our children, and design our
+                    institutions. This gem is a joy to read, and it shatters the myth that greed is the path to success.
+                </p>
+                <a href="../../Books_pdf/Trending/Give and Take_ WHY HELPING OTHERS DRIVES OUR SUCESS.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Trendings/Military-Diaries.png" alt="Batman & Spider Man">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Military Diaries</b></h3>
+                <h6><b>Author:</b> <i>Majesty Caitlin</i></h6>
+                <h6><b>Publisher: </b><i>Penguin Group (USA)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    This is the 4th book in the series that I wrote to magnify the course taken to become a prince. I put details in it that might appeal to previous readers. 
+                    The first instance I recall my adventures starting out is when I first got injured in
+                    highschool. I was a good athlete but not really a great one. I was committed to the activities I
+                    was participating in yet not really planning on going all the way. 
+                </p>
+                <a href="../../Books_pdf/Trending/Mistry.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Trendings/Speak-to-Win.png" alt="Batman & Spider Man">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Speak To Win</b></h3>
+                <h6><b>Author:</b> <i>Brain Tracy</i></h6>
+                <h6><b>Publisher: </b><i>AMACOM (American Management Association)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    In Speak To Win, you will learn how to: become confident, positive, and relaxed in front of any audience. grab people's attention from the start. use body language, props, and vocal techniques to keep listeners engaged.
+                </p>
+                <a href="../../Books_pdf/Trending/Speak to Win_ How to Present with Power in Any Situation.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Trendings/summer-autum-book.png" alt="Batman & Spider Man">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Winter, Autumn, Summer, Spring</b></h3>
+                <h6><b>Author:</b> <i>Cleo Patra</i></h6>
+                <h6><b>Publisher: </b><i>Createspace Independent Pub</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    In her new book, Cleo Patra takes her reader on an extraordinary journey. The reader enters the valleys of Dark Shadow Emotions and the Desert Of Loneliness. When the reader lost all hope of surviving the Desert of Loneliness, Cleo Patra rises like an ancient phoenix-lioness out of the ashes of pain and suffering; sweeps herreader upon her wings and together they discover new exciting, mystical spheres.
+                </p>
+                <a href="../../Books_pdf/Trending/Spring, Summer Seasons.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Trendings/wired-love.png" alt="Batman & Spider Man">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Wired Love: A Romance Of Dots And Dashes</b></h3>
+                <h6><b>Author:</b> <i>ELLA CHEEVER THAYER</i></h6>
+                <h6><b>Publisher: </b><i>Createspace Independent Pub</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Wired Love a Romance of Dots and DashesWired Love a Romance of Dots and Dashes by Ella Cheever Thayer, is an enchanting book about a love affair between two telegraphers in America, code names 'N' and 'C'. 
+                </p>
+                <a href="../../Books_pdf/Trending/Romance.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+         <!-- Thrillers -->
+         <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Thrillers/Vamper.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>THE VAMPYRE</b></h3>
+                <h6><b>Author:</b> <i>John William Polidori</i></h6>
+                <h6><b>Publisher: </b><i>	The New Monthly Magazine and Universal Register</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    The story describes two new arrivals to London, Aubrey and Ruthven, who meet and decide to travel together throughout Europe. After Aubrey and Ruthven arrive in Greece, Aubrey falls in love with a beautiful Greek young woman. Tragically, she is killed by a vampire, who Aubrey later learns is Ruthven.
+                </p>
+                <a href="../../Books_pdf/Thrillers/The-Vempors.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Thrillers/Wieland-or-the-Transformation.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Wieland; Or The Transformation </b></h3>
+                <h6><b>Author:</b> <i>Charles Brockden Brown</i></h6>
+                <h6><b>Publisher: </b><i> Aegypan</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Excerpt from Wieland or the Transformation
+                    Genius and knowledge command respect; but superior genius and profound knowledge, combined with exalted moral purity, cannot fail to excite unmingled admiration. The reputation of an author in whom these qualities are united may be circumscribed during life; but its rise and extension after death prove that his claims to distinction are well founded. 
+                </p>
+                <a href="../../Books_pdf/Thrillers/Wieland-Or-Transformation.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Not In Library/Not-in-Library6.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>THE DARK TOWER:</b></h3>
+                <B><p>Wolves Of The Calla </p></B>
+                <h6><b>Author:</b> <i>Stephen King</i></h6>
+                <h6><b>Publisher: </b><i>  Donald Grant; First Edition (January 1, 2003)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Once every generation, a band of masked riders known as the Wolves gallop out of the dark land of Thunderclap to steal one half of all the twins born in the Callas. When the children are returned, they are  roont, or mentally and physically ruined. In less than a month, the Wolves will raid again. 
+                </p>
+                <a><button class="btn-not-library">Not In Library</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Not In Library/Not-in-Library7.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>THE BACHMAN BOOKS:</b></h3>
+                <b><p>Four Early Novels</p></b>
+                <h6><b>Author:</b> <i>Stephen King</i></h6>
+                <h6><b>Publisher: </b><i>  Signet (23 September 1986)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    The Bachman Books is a collection of short novels by Stephen King published under the pseudonym Richard Bachman between 1977 and 1982. It made The New York Times Best Seller list upon its release in 1985.
+                </p>
+                <a><button class="btn-not-library">Not In Library</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Not In Library/Not-in-Library-img2.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>ATOM CURTAIN:</b></h3><b><p>(Between America And The Rest Of The World Rose A Wall Of Death! ) </p></b>
+                <h6><b>Author:</b> <i>Nick Boddie Williams</i></h6>
+                <h6><b>Publisher: </b><i> Armchair Fiction & Music (January 26, 2015)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Armchair Fiction presents extra large editions of classic science fiction double novels. The first novel is Nick Boddie Williams’ “The Atom Curtain.” He broke the barrier to a continent in exile. For two hundred and seventy years America had been totally cut off from the rest of the world by an impenetrable wall of raging atomic fury.
+                </p>
+                <a><button class="btn-not-library">Not In Library</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+         <!-- Textbook -->
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Textbooks/Broken-Heart.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>BROKEN HEART:</b></h3>
+                <B><P>Survival Guide</P></B>
+                <h6><b>Author:</b> <i> Anonymous</i></h6>
+                <h6><b>Publisher: </b><i>Consumer Oriented Ebooks Publisher</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Lessons learned after breakup and ways to have a good relationship in the future!
+                    Get All The Support And Guidance You Need To Be A Success At Having Better Relationships! Is the fact that you would like to have better relationships but just don't know how making your life difficult... maybe even miserable?  
+                </p>
+                <a href="../../Books_pdf/Textbooks/Broken-Heart.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Textbooks/Gaming-Addiction.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Dealing With Gaming Addiction</b></h3>
+                <h6><b>Author:</b> <i> Mr. Innocent Aviomoh </i></h6>
+                <h6><b>Publisher: </b><i>TpT Sellers</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Dealing with Gaming Addiction eBook PDF is an eBook that discusses what gaming addiction is and its affect on the mental state of children and adolescents. It also discusses the best way to deal with it.
+                </p>
+                <a href="../../Books_pdf/Textbooks/Dealing-with-Game-Addiction.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Textbooks/No-More-Alcohol.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Alcohol No More</b></h3>
+                <h6><b>Author:</b> <i>Anonymous</i></h6>
+                <h6><b>Publisher: </b><i>Consumer Oriented Ebooks Publisher</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Free Yourself From Addiction Forever…
+                    Discover How A Hopeless Alcohol Addict Freed Himself From His Uncontrolled Habits And Rid Himself From Life Destroying Addictions Once And For All!
+                    Finally You Can Fully Equip Yourself With These “Must Have” Tools For Breaking Addiction And Live A Life Of Freedom That You Deserve!
+                </p>
+                <a href="../../Books_pdf/Textbooks/No-More-Alcohal.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Textbooks/Qick-Wellness.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>QUICK WELLNESS</b></h3>
+                <h6><b>Author:</b> <i> Faisal Sarfraz</i></h6>
+                <h6><b>Publisher: </b><i>John Scoot</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Wellness is the act of practicing healthy habits on a daily basis to attain better physical and mental health outcomes, so that instead of just surviving, you're thriving. To understand the significance of wellness, it's important to understand how it's linked to health.
+                </p>
+                <a href="../../Books_pdf/Textbooks/Quick-Wellness.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/Textbooks/Weight-Loss.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Carb Cycling For Weight Loss</b></h3>
+                <h6><b>Author:</b> <i> Shoshana Pritzker </i></h6>
+                <h6><b>Publisher: </b><i> Rockridge Press (31 August 2021)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Discover a new diet approach that doesn’t make you sacrifice the carbs you love. Carb Cycling for Weight Loss provides all the tools you need for weight loss with guidance that helps you stick with the plan. With comprehensive tips and meal plans, you’ll enjoy a new lifestyle with carb cycling and fat-burning workouts. Discover easy-to-prepare meals that are perfectly portioned to cycle carb intake and fuel your workouts.
+                </p>
+                <a href="../../Books_pdf/Textbooks/Carb-Cycling-For-Weight-Loss.pdf" ><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <!-- Kid's book -->
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/kids/Art-&-Drawing.png" alt="Art & Drawing">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Art & Drawing</b></h3>
+                <h6><b>Author:</b> <i>Edgar Loy Fankbonner</i></h6>
+                <h6><b>Publisher: </b><i>Sterling Publishing Co., Ine (NEW YORK)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Drawing the human figure reqiures a curious gaze and a will to keep practicing even if our first drawing fail. Observing ans drawing the human figure regularly allows us to adjust our visual memory to physical forms, body language and facial expressions in different situations. 
+                </p>
+                <a href="../../Books_pdf/Kid Book/The -art-kid.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/kids/Batman-&-Spider-Man.png" alt="Batman & Spider Man">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>Batman & Spider Man</b></h3>
+                <h6><b>Author:</b> <i>J.M. DeMatteis</i></h6>
+                <h6><b>Publisher: </b><i>Marvel Comics</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Batman & Spider-Man features a pair of more calculating villains than the highly insane ones of Spider-Man and Batman. There is less parallel storytelling this time but DeMatteis uses it beautifully in a memorable page giving contrasting exposition. 
+                </p>
+                <a href="../../Books_pdf/Kid Book/Batman-Spider-man.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/kids/Disney-Tangled.png" alt="disne Tangled">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>The Art Of Tangled</b></h3>
+                <h6><b>Author:</b> <i>Jeff Kurtti</i></h6>
+                <h6><b>Publisher: </b><i>Chroncile Books</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    The Art of Tangled is a book about the making of the movie Tangled. It features concept art created for the film, including character studies and sculpts, color scripts, storyboards, and interviews with production artists about the making of the movie.
+                </p>
+                <a href="../../Books_pdf/Kid Book/The Art of Tangled kid.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/kids/How-to-Ride-Dragon.png" alt="How-to-Ride-Dragon">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>How To Ride Dragons</b></h3>
+                <h6><b>Author:</b> <i>Cressida Cowell.</i></h6>
+                <h6><b>Publisher: </b><i> Hodder Children's Books (UK) Little, Brown and Company (US)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Trapped on The American Dream II with his friends Fishlegs and Camicazi, Hiccup must ESCAPE the barbarian Norbert the Nutjob, and somehow dodge the cruel Polar-serpents in the icy waters below. If ONLY Hiccup hadn't promised to help the Wanderer slaves on board escape too!
+                </p>
+                <a href="../../Books_pdf/Kid Book/How to ride a dragon’s storm kid.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                    <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+        <div class="book-content">
+            <div>
+                <img class="book-img" src="../../Image/kids/How-to-train-dragon.png" alt="How-to-train-dragon">
+            </div>
+            <div  class="book-info">
+                <h3 class="book-info-heading"> <b>How To Train Dragon</b></h3>
+                <h6><b>Author:</b> <i>Cressida Cowell</i></h6>
+                <h6><b>Publisher: </b><i>Hodder Children's Books (UK) Little, Brown and Company (US)</i></h6>
+                <h6><b>Summary:</b></h6>
+                <p class="summary" >
+                    Parents need to know that Cressida Cowell's How to Train Your Dragon is the first in a 10-volume series about a gentle young Viking boy, Hiccup Horrendous Haddock III, who must prove he can catch and train a dragon to pass a Viking initiation test. There's a bit of violence a deer is torn to pieces, a dragon…
+                </p>
+                <a href="../../Books_pdf/Kid Book/1-How to train your dragon kid.pdf"><button class="book-borrow-btn">Borrow</button></a> &nbsp;
+                 <!-- Button 2 (Favourite) -->
+                <button class="favourite"><i class="fa-solid fa-star star-icon"></i></button>
+            </div>  
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+          <h6 class="heading">The Readers</h6>
+            <a class="links" href="#"> Vision</a><br>
+            <a class="links" href="#"> Volunteer</a><br>
+            <a class="links" href="#"> Volunteer</a><br>
+            <a class="links" href="#"> Partner With Us</a><br>
+            <a class="links" href="#"> Careers</a><br>
+            <a class="links" href="#"> Blog</a><br>
+            <a class="links" href="#"> Terms of Service</a><br>
+            <a class="links" href="#"> Donate</a><br>
+        </div>
+
+        <div class="footer-content">
+          <h6 class="heading">Discover</h6>
+            <a class="links" href="../../index.html"> Home</a><br>
+            <a class="links" href="#"> Books</a><br>
+            <a class="links" href="#"> Authors</a><br>
+            <a class="links" href="#"> Subjects</a><br>
+            <a class="links" href="#"> Collections</a><br>
+            <a class="links" href="#"> Advanced Search</a><br>
+            <a class="links" href="#"> Return to Top</a><br>
+        </div>
+
+        <div class="footer-content">
+          <h6 class="heading">Develop</h6>
+            <a class="links" href="#"> Developer Center</a><br>
+            <a class="links" href="#"> API Documention</a><br>
+            <a class="links" href="#"> Bulk Data Dumps</a><br>
+            <a class="links" href="#"> Writing Bots</a><br>
+        </div>
+
+        <div class="footer-content">
+          <h6 class="heading">Help</h6>
+            <a class="links" href="#"> Help Center</a><br>
+            <a class="links" href="#"> Report A Problem</a><br>
+            <a class="links" href="#"> Suggesting Edits </a><br>
+            <a class="links" href="#"> Add a Books</a><br>
+            <a class="links" href="#"> Release Notes</a><br>
+            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+        </div>
+
+        <div class="footer-content">
+          <h6 class="heading">Change Website Language</h6>
+            <a class="links" href="#"> Čeština (cs)</a><br>
+            <a class="links" href="#"> Deutsch (de)</a><br>
+            <a class="links" href="#"> English (en)</a><br>
+            <a class="links" href="#"> Español (es)</a><br>
+            <a class="links" href="#"> Français (fr)</a><br>
+            <a class="links" href="#"> Hrvatski (hr)</a><br>
+            <a class="links" href="#"> Italiano (it)</a><br>
+            <a class="links" href="#"> DPortuguês (pt)</a><br>
+            <a class="links" href="#"> हिंदी (hi)</a><br>
+            <a class="links" href="#"> Sardu (sc)</a><br>
+            <a class="links" href="#"> తెలుగు (te) (pt)</a><br>
+            <a class="links" href="#"> Українська (uk)</a><br>
+            <a class="links" href="#"> 中文 (zh)</a><br>
+        </div>
+
+    </footer>
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+
+</body>
+</html>

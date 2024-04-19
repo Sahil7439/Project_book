@@ -12,34 +12,39 @@
   </head>
   <body>
     <div class="container-fluid">
-      <form  class="mx-auto">
+      <form method="post" action="../../PHP/author.php" class="mx-auto">
         <h4 class="text-center">Authors</h4><br>
-        <div class="mb-3 ">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
-            <input type="name" class="form-control" id="exampleInputName1">
-          </div>      
-        <div class="mb-3 ">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+        <div class="mb-3">
+            <label for="exampleInputFirstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="exampleInputFirstName" name="first_name">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contact</label>
-            <input type="contact" class="form-control" id="exampleInputContact1">
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label for="exampleInputLastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="exampleInputLastName" name="last_name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputContact" class="form-label">Contact</label>
+            <input type="text" class="form-control" id="exampleInputContact" name="contact">
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="status" id="flexRadioDefault1" value="Available" checked>
             <label class="form-check-label" for="flexRadioDefault1">
-             Available
+                Available
             </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="status" id="flexRadioDefault2" value="Unavailable">
             <label class="form-check-label" for="flexRadioDefault2">
-              Unavailable
+                Unavailable
             </label>
-          </div>
-          <button type="submit" class="btn btn-primary mt-4">Submit</button>
-          </form>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+    </form>
+    
           </div>
           </body>
           </html>
